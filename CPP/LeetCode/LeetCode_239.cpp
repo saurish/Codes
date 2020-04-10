@@ -61,7 +61,7 @@ public:
 int main()
 {
     Solution s;
-    vector<int> v{ 1,3,-1,-3,5,3,6,7 };
+    vector<int> v{1,3,-1,-3,5,3,6,7};
 
     for (auto& v : s.maxSlidingWindow(v,3))
         cout << v << " ";

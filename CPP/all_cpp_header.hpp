@@ -26,6 +26,6 @@ template <typename T>
 using Max_heap  =   std::priority_queue<T>;
 
 template <typename T>
-using Min_heap  =   std::priority_queue<T, vector<T>, std::greater<>>;
+using Min_heap  =   std::priority_queue<T, vector<T>, std::greater<T> >;
 
  
