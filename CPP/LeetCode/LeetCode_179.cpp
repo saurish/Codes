@@ -1,4 +1,4 @@
-#include "all_cpp_header.hpp"
+#include "../all_cpp_header.hpp"
 
 class Solution {
 public:
