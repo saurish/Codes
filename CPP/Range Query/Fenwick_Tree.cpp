@@ -59,7 +59,6 @@ void FenwickTree::update_value(int idx, int add_value)
     while(idx < binary_indexed_tree.size())
     {
         binary_indexed_tree[idx] += add_value;
-        cout << idx << " next : " << next(idx) << " parent-of-next " << parent(next(idx)) << endl;
         idx =   next(idx); 
     }
 }
