@@ -1,4 +1,13 @@
+/*  Author          :   Sauresh Bhowmick
+ *  Problem Link    :   https://leetcode.com/problems/decode-ways/   
+ *  Comment         :   Tree-based approach, not very efficient solution as it 
+ *                      recomputes same sub-problem multiple times. For DP-based
+ *                      efficient solution see _2 solution
+ */
+
 #include "../all_cpp_header.hpp"
+
+
 
 class Solution {
 public:
@@ -38,6 +47,10 @@ public:
 int main()
 {
     Solution s;
+    RunTimeProfiler rtp;
+
+    rtp.start("Tree-based");
     cout << "Count " << s.numDecodings("9317949759856497357254398763219839323723136763131916377913495416692666785978758414629119614215967159") << endl;
+    rtp.end("Tree-based");
     return 1;
 }

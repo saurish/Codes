@@ -21,7 +21,6 @@ class RunTimeProfiler
 {
     public:
 
-        RunTimeProfiler();
         void            start           (string comment);
         void            end             (string comment);
 
@@ -49,9 +48,9 @@ void        RunTimeProfiler::end            (string comment)
         assert(false);
 
     Duration    duration_sec    =   end_time - time_stamp_stack.top().time_point;
-    time_stamp_stack.pop();
 
     cout << std::setw(20) << "End ["    << time_stamp_stack.size() << "] " << std::setw(40) << comment 
-         << std::setw(20) << std::fixed << std::setprecision(2)    << duration_sec.count() << endl;
+         << std::setw(20) << std::fixed << std::setprecision(2)    << duration_sec.count() << "s" << endl;
 
+    time_stamp_stack.pop();
 }

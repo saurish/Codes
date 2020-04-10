@@ -21,7 +21,6 @@ using namespace std;
 #define     min4(a,b,c,d)   min(min(a,b),min(c,d))
 
 /// Priority Queue
-
 template <typename T>
 using Max_heap  =   std::priority_queue<T>;
 
