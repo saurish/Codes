@@ -46,7 +46,6 @@ public:
             //cout << "Max Elem " << max_element.first << " " << max_element.second << endl;
 
             if (left(max_element.second) < nums.size()){
-
                 aux_max_heap.push_back(make_pair(left_child(nums, max_element.second), left(max_element.second)));
                 std::push_heap (aux_max_heap.begin(), aux_max_heap.end(), CompareHeapElem());
             }
@@ -58,7 +57,6 @@ public:
         }
 
         return max_element.first;
-
     }
 };
 

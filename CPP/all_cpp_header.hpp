@@ -7,6 +7,7 @@
 #include <queue>
 #include <deque>
 #include <set>
+#include <unordered_set>
 #include <algorithm>
 #include <fstream>
 #include "Profiler.hpp"
