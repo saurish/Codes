@@ -1,6 +1,6 @@
 /*  Author          :   Sauresh Bhowmick
  *  Problem Link    :   https://leetcode.com/problems/path-in-zigzag-labelled-binary-tree/ 
- *  Comment         :   runtime O(h) -- height of the element
+ *  Comment         :   runtime O(h) -- height of the element, beat 100%
  *  Algorithm       :   For each element find it's parent in the original non-zigzag binary 
  *                      tree and then find the element which is sitting at symmetrically  
  *                      opposite position at that level. This element is parent element of
