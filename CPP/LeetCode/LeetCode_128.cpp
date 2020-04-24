@@ -2,7 +2,7 @@
  *  Problem Link    :   https://leetcode.com/problems/longest-consecutive-sequence/
  *  Comment         :   unorderd_map & DFS based solution; start from a value, travel
  *                      left & right continuous ranges; count size; if greater than 
- *                      current max_count, update.
+ *                      current max_count, update. Runtime O(N).
  */
 
 #include "../all_cpp_header.hpp"
